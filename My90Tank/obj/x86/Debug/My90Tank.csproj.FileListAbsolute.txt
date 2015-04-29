@@ -1,0 +1,26 @@
+D:\教学\教学\教程\CSharp 教程\Demo\MyTank\My90Tank\My90Tank\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\教学\教学\教程\CSharp 教程\Demo\MyTank\My90Tank\My90Tank\obj\x86\Debug\My90Tank.Form1.resources
+D:\教学\教学\教程\CSharp 教程\Demo\MyTank\My90Tank\My90Tank\obj\x86\Debug\My90Tank.Properties.Resources.resources
+D:\教学\教学\教程\CSharp 教程\Demo\MyTank\My90Tank\My90Tank\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\教学\教学\教程\CSharp 教程\Demo\MyTank\My90Tank\My90Tank\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\教学\教学\教程\CSharp 教程\Demo\MyTank\My90Tank\My90Tank\bin\Debug\My90Tank.exe
+D:\教学\教学\教程\CSharp 教程\Demo\MyTank\My90Tank\My90Tank\bin\Debug\My90Tank.pdb
+D:\教学\教学\教程\CSharp 教程\Demo\MyTank\My90Tank\My90Tank\obj\x86\Debug\My90Tank.exe
+D:\教学\教学\教程\CSharp 教程\Demo\MyTank\My90Tank\My90Tank\obj\x86\Debug\My90Tank.pdb
+C:\Users\wldraa\Desktop\workspace\c++\MyTank\My90Tank\My90Tank\obj\x86\Debug\My90Tank.exe
+C:\Users\wldraa\Desktop\workspace\c++\MyTank\My90Tank\My90Tank\obj\x86\Debug\My90Tank.pdb
+C:\Users\wldraa\Desktop\workspace\c++\MyTank\My90Tank\My90Tank\bin\Debug\My90Tank.exe
+C:\Users\wldraa\Desktop\workspace\c++\MyTank\My90Tank\My90Tank\bin\Debug\My90Tank.pdb
+C:\Users\wldraa\Desktop\workspace\c++\MyTank\My90Tank\My90Tank\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\wldraa\Desktop\workspace\c++\MyTank\My90Tank\My90Tank\obj\x86\Debug\My90Tank.Form1.resources
+C:\Users\wldraa\Desktop\workspace\c++\MyTank\My90Tank\My90Tank\obj\x86\Debug\My90Tank.Properties.Resources.resources
+C:\Users\wldraa\Desktop\workspace\c++\MyTank\My90Tank\My90Tank\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\wldraa\Desktop\workspace\c++\MyTank\My90Tank\My90Tank\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\CODE\VS\My90Tank\My90Tank\obj\x86\Debug\My90Tank.exe
+D:\CODE\VS\My90Tank\My90Tank\obj\x86\Debug\My90Tank.pdb
+D:\CODE\VS\My90Tank\My90Tank\bin\Debug\My90Tank.exe
+D:\CODE\VS\My90Tank\My90Tank\bin\Debug\My90Tank.pdb
+D:\CODE\VS\My90Tank\My90Tank\obj\x86\Debug\My90Tank.csprojResolveAssemblyReference.cache
+D:\CODE\VS\My90Tank\My90Tank\obj\x86\Debug\My90Tank.Form1.resources
+D:\CODE\VS\My90Tank\My90Tank\obj\x86\Debug\My90Tank.Properties.Resources.resources
+D:\CODE\VS\My90Tank\My90Tank\obj\x86\Debug\My90Tank.csproj.GenerateResource.Cache

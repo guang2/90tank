@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5298CC05-EB95-4568-8177-22FAFEDC8A88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>My90Tank</RootNamespace>
+    <AssemblyName>My90Tank</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Element.cs" />
+    <Compile Include="Enemy.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grass.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="Missile.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="P1Player.cs" />
+    <Compile Include="P2Player.cs" />
+    <Compile Include="ParamSetting.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="Steel.cs" />
+    <Compile Include="Symbol.cs" />
+    <Compile Include="Wall.cs" />
+    <Compile Include="Water.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\add.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\blast1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\blast2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\blast3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\blast4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\blast5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\blast6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\blast7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\blast8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\blast.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\bomb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\born1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\born2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\born3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\born4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\destory.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy1D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy1L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy1R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy1U.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy2D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy2L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy2R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy2U.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy3D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy3L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy3R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemy3U.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\enemymissile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\fire.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\grass.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\mintank.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\over.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\p1tankD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\p1tankL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\p1tankR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\p1tankU.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\p2tankD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\p2tankL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\p2tankR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\p2tankU.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\select.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\selecttank.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\star.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\start.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\steel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\steels.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\symbol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\tankmissile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\timer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\title.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\wall.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\walls.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\water.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
