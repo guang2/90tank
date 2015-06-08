@@ -1,0 +1,9 @@
+D:\CODE\VS\homework\My90Tank\bin\Release\My90Tank.exe
+D:\CODE\VS\homework\My90Tank\bin\Release\My90Tank.pdb
+D:\CODE\VS\homework\My90Tank\obj\x86\Release\My90Tank.csprojResolveAssemblyReference.cache
+D:\CODE\VS\homework\My90Tank\obj\x86\Release\My90Tank.Form1.resources
+D:\CODE\VS\homework\My90Tank\obj\x86\Release\My90Tank.Properties.Resources.resources
+D:\CODE\VS\homework\My90Tank\obj\x86\Release\My90Tank.Start_Form.resources
+D:\CODE\VS\homework\My90Tank\obj\x86\Release\My90Tank.csproj.GenerateResource.Cache
+D:\CODE\VS\homework\My90Tank\obj\x86\Release\My90Tank.exe
+D:\CODE\VS\homework\My90Tank\obj\x86\Release\My90Tank.pdb

@@ -73,7 +73,7 @@ namespace My90Tank
 
             }
             //按下就开始根据按下的键移动
-            Move();
+           
         }
 
         public void KeyUp(KeyEventArgs e)
@@ -122,7 +122,7 @@ namespace My90Tank
         /// </summary>
         public void Fire()
         {
-            int xx = this.X, yy = this.Y;
+            int xx = this.X-7, yy = this.Y-7;
             switch (this.direct)
             {
                 case DIRECTION.UP:
@@ -214,7 +214,9 @@ namespace My90Tank
                         break;
                 }
             }
+            Move();
         }
+
 
     }
 }

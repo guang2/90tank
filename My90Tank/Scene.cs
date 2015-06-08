@@ -10,7 +10,8 @@ namespace My90Tank
     public class Scene
     {
         public static int MAX_ENEMY_NUMBER = 20;
-        private P1Player play1 = new P1Player(240, 540, 3, 8, 1, DIRECTION.UP);
+        private P1Player play1 = new P1Player(240, 540, 5, 12, 1, DIRECTION.UP);//speed was 8
+        private P1Player play1_ = new P1Player(240, 540, 3, 6, 3, DIRECTION.UP);
         private P2Player play2 = new P2Player(480, 540, 3, 6, 1, DIRECTION.UP);
         private Symbol symbol = new Symbol(360, 560);
 
@@ -27,11 +28,17 @@ namespace My90Tank
         {
             get
             {
-                return play1;
+                if (Form1.Tank_Type == 2)
+                    return play1_;
+                else //if(Form1.Tank_Type==2)
+                     return play1;
             }
             set
             {
-                play1 = value;
+                if (Form1.Tank_Type == 2)
+                 play1_ = value;
+                else
+                 play1 = value;
             }
         }
 
@@ -59,9 +66,9 @@ namespace My90Tank
         public void CreateAnEnemyAndAdd()
         {
             Random random = new Random((int)DateTime.Now.Ticks);
-            int t = random.Next(3);
+            int t = random.Next(3);//t=0,1,2
             EnemyType type = (EnemyType)t;
-            int p = random.Next(3);
+            int p = random.Next(3);//birth place
             int birthX = 0;
             int birthY = 0;
             if (p == 0)
@@ -83,7 +90,8 @@ namespace My90Tank
         {
             if (ele is P1Player)
             {
-                this.play1 = ele as P1Player;
+              //  this.play1 = ele as P1Player;
+                this.P1Play = ele as P1Player;
             }
             else if( ele is Wall)
             {
@@ -130,8 +138,7 @@ namespace My90Tank
         {
             this.P1Play.Draw(g);
             
-            foreach (Grass grass in grassList)
-                grass.Draw(g);
+            
             foreach (Wall wall in wallList)
                 wall.Draw(g);
             foreach (Water water in waterList)
@@ -144,8 +151,8 @@ namespace My90Tank
                 enemy.Draw(g);
             if (this.symbol != null)
                 symbol.Draw(g);
-
-
+            foreach (Grass grass in grassList)
+                grass.Draw(g);
 
         }
 
@@ -157,8 +164,12 @@ namespace My90Tank
             foreach (Enemy enemy in enemyList)            
                 CheckBlock(enemy);
             foreach (Missile missile in missileList)
-                deadMissile = CheckDeadAndRemove(missile);
-
+            {
+                if (CheckDeadAndRemove(missile))
+                {
+                    deadMissile.Add(missile);
+                }
+            }
             for (int i = 0; i < deadMissile.Count; i++)
             {
                 missileList.Remove(deadMissile[i]);
@@ -229,7 +240,7 @@ namespace My90Tank
         }
 
         //用missile对象确定场景中目标的生命值小于等于0，并删除掉该对象
-        public List<Missile> CheckDeadAndRemove(Missile m)
+        public bool CheckDeadAndRemove(Missile m)
         {
             List<Missile> deadMissiles = new List<Missile>();
             int i = 0;
@@ -237,9 +248,8 @@ namespace My90Tank
             {
                 if (m.GetRectangle().IntersectsWith(wallList[i].GetRectangle()))
                 {
-                    deadMissiles.Add(m);
                     wallList.RemoveAt(i);
-                    return deadMissiles;
+                    return true;
                 }
             }
             
@@ -247,23 +257,23 @@ namespace My90Tank
             {
                 if (m.GetRectangle().IntersectsWith(steelList[i].GetRectangle()))
                 {
-                    deadMissiles.Add(m);
+                    //deadMissiles.Add(m);
                     if (m.power > 2)
                     {
                         steelList.RemoveAt(i);
                         i--;
                     }
-                    return deadMissiles;
+                    return true;
                 }
             }
             
             
             if (m.GetRectangle().IntersectsWith(P1Play.GetRectangle()))
             {
-                deadMissiles.Add(m);
+                //deadMissiles.Add(m);
                 P1Play.life = 0;
                 //MessageBox.Show("Game Over!");
-                return deadMissiles;
+                return true;
             }
 
 
@@ -273,19 +283,19 @@ namespace My90Tank
                 {
                     enemyList.RemoveAt(i);
                     i--;
-                    deadMissiles.Add(m);
-                    return deadMissiles;
+                    //deadMissiles.Add(m);
+                    return true;
                 }
             }
 
             if (m.X == 0 || m.Y == 0 || m.X >= ParamSetting.Map_Width || m.Y >= ParamSetting.Map_Height)
-                deadMissiles.Add(m);
-
-            if (enemyList.Count == 0)
-                MessageBox.Show("Yow Win!");
+                //  deadMissiles.Add(m);
+                return true;
+            if (enemyList.Count == 0) { }
+               // MessageBox.Show("Yow Win!");
             
             //m.IsBlocked = false;
-            return deadMissiles;
+            return false;
         }
     }
 }

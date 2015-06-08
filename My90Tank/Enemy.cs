@@ -156,7 +156,7 @@ namespace My90Tank
             int a  = r.Next(50);
             if (a < 48)
                 return;
-            int xx = this.X, yy = this.Y;
+            int xx = this.X-7, yy = this.Y-7;
             switch (this.direct)
             {
                 case DIRECTION.UP:
